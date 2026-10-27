@@ -1,0 +1,26 @@
+---
+enable: true
+badge: ""
+title: "Five systems every <strong>growing business needs</strong>"
+items:
+  - image: "/images/brands-group-1.png"
+    number: "01"
+    title: "FOUNDATION"
+    content: "A website that clearly explains what you do, who it is for and what the visitor should do next."
+  - image: "/images/brands-group-2.png"
+    number: "02"
+    title: "CAPTURE"
+    content: "A reliable way to collect enquiries from your website, campaigns and referrals in one place."
+  - image: "/images/brands-group-3.png"
+    number: "03"
+    title: "ORGANISE"
+    content: "A CRM where every lead has an owner, a stage and a clear next action."
+  - image: "/images/brands-group-4.png"
+    number: "04"
+    title: "AUTOMATE"
+    content: "Follow-ups, reminders and handovers that happen without someone having to remember them."
+  - image: "/images/brands-group-5.png"
+    number: "05"
+    title: "IMPROVE"
+    content: "Reporting that shows where the process is working, where it is leaking and what to fix next."
+---

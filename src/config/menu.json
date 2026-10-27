@@ -1,0 +1,81 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Services",
+      "url": "/features"
+    },
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Team",
+      "url": "/team"
+    },
+    {
+      "name": "Insights",
+      "url": "/blog"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ],
+  "footer_col_1_title": "Company",
+  "footer_col_2_title": "Services",
+  "footer_col_3_title": "Legal",
+  "footer_primary": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Team",
+      "url": "/team"
+    },
+    {
+      "name": "Insights",
+      "url": "/blog"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ],
+  "footer_resource": [
+    {
+      "name": "Web Design & Development",
+      "url": "/features"
+    },
+    {
+      "name": "Custom Software & CRM",
+      "url": "/features"
+    },
+    {
+      "name": "Automation & Integrations",
+      "url": "/features"
+    },
+    {
+      "name": "Digital Growth & SEO",
+      "url": "/features"
+    }
+  ],
+  "footer_legal": [
+    {
+      "name": "Privacy Policy",
+      "url": "/privacy-policy"
+    },
+    {
+      "name": "Terms and Conditions",
+      "url": "/term-and-condition"
+    }
+  ]
+}

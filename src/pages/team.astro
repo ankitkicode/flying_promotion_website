@@ -1,0 +1,36 @@
+---
+import Base from "@/layouts/Base.astro";
+import CallToAction from "@/layouts/components/CallToAction.astro";
+import PageHeader from "@/layouts/components/PageHeader.astro";
+import TeamCard from "@/layouts/components/TeamCard.astro";
+import { getListPage } from "@/lib/contentParser.astro";
+import type { Team } from "@/types";
+
+const team = await getListPage("team", "-index");
+const teamData: Team = team.data;
+---
+
+<Base {...teamData}>
+  <PageHeader
+    title={teamData.page_header.title}
+    subtitle={teamData.page_header.subtitle}
+  />
+
+  <section class="section pt-0">
+    <div class="container">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        {
+          teamData.members.map((member) => (
+            <TeamCard
+              image={member.image}
+              name={member.name}
+              role={member.role}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <CallToAction />
+</Base>

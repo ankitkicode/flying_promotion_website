@@ -1,0 +1,39 @@
+{
+  "site": {
+    "title": "Flying Promotion",
+    "base_url": "https://flyingpromotion.com",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.png",
+    "logo": "/images/brand/logo-full.webp",
+    "logo_width": "150",
+    "logo_height": "80",
+    "logo_text": "Flying Promotion"
+  },
+  "settings": {
+    "sticky_header": true
+  },
+  "params": {
+    "contact_form_action": "/api/contact",
+    "checklist_form_action": "#",
+    "apply_form_action": "#",
+    "copyright": "Copyright &copy; 2026 <strong>Flying Promotion</strong> All Rights Reserved",
+    "footer_tagline": "Websites, custom software, CRM, automation, and growth systems — built to move your business forward.",
+    "footer_email": "",
+    "footer_phone": ""
+  },
+  "navigation_button": {
+    "enable": true,
+    "label": "Let's Talk",
+    "link": "/contact"
+  },
+  "google_tag_manager": {
+    "enable": false,
+    "gtm_id": ""
+  },
+  "metadata": {
+    "meta_author": "Flying Promotion",
+    "meta_image": "/images/og-image.jpg",
+    "meta_description": "Flying Promotion is a technology and digital growth agency building websites, custom software, CRMs, automations, and growth systems for ambitious businesses."
+  }
+}
