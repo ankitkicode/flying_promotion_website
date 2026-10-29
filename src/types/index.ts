@@ -26,6 +26,8 @@ export type ComparisonRowSection =
   CollectionEntry<"comparisonRowSection">["data"];
 export type BusinessNeedsSection =
   CollectionEntry<"businessNeedsSection">["data"];
+export type DigitalMarketingSection =
+  CollectionEntry<"digitalMarketingSection">["data"];
 
 // ─── Config File Types ────────────────────────────────────────────────────────
 

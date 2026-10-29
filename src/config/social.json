@@ -1,3 +1,14 @@
 {
-  "main": []
+  "main": [
+    {
+      "name": "Facebook",
+      "icon": "FaFacebookF",
+      "link": "https://www.facebook.com/share/18NkkhnrXU/"
+    },
+    {
+      "name": "Instagram",
+      "icon": "FaInstagram",
+      "link": "https://www.instagram.com/flyingpromotion?igsh=MXFrY283bXNsaW8wdg=="
+    }
+  ]
 }

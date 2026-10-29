@@ -3,6 +3,7 @@ import Base from "@/layouts/Base.astro";
 import Badge from "@/layouts/components/Badge.astro";
 import BrandsCarousel from "@/layouts/components/BrandsCarousel.astro";
 import CallToAction from "@/layouts/components/CallToAction.astro";
+import DigitalAbout from "@/layouts/components/DigitalAbout.astro";
 import Faq from "@/layouts/components/Faq.astro";
 import GradientBlob from "@/layouts/components/GradientBlob.astro";
 import ImageMod from "@/layouts/components/ImageMod.astro";
@@ -220,6 +221,9 @@ const aboutData: About = about.data;
 
   <!-- CEO Letter Section -->
   <OurStory />
+
+  <!-- About (legacy site content) -->
+  <DigitalAbout />
 
   <!-- Meet Our Team Section -->
   {

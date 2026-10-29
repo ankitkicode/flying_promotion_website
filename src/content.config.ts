@@ -596,6 +596,78 @@ const businessNeedsSectionCollection = defineCollection({
   }),
 });
 
+const digitalMarketingSectionCollection = defineCollection({
+  loader: glob({
+    pattern: "digital-marketing.{md,mdx}",
+    base: "src/content/sections",
+  }),
+  schema: z.object({
+    enable: z.boolean(),
+    services: z.object({
+      enable: z.boolean(),
+      badge: z.string().optional(),
+      title: z.string(),
+      content: z.string(),
+      statement: z
+        .object({
+          enable: z.boolean(),
+          badge: z.string().optional(),
+          title: z.string(),
+          content: z.string(),
+          button: z.object({
+            enable: z.boolean(),
+            label: z.string(),
+            link: z.string(),
+          }),
+        })
+        .optional(),
+      items: z.array(
+        z.object({
+          icon: z.string(),
+          title: z.string(),
+          description: z.string(),
+        }),
+      ),
+    }),
+    stats: z.object({
+      enable: z.boolean(),
+      items: z.array(z.object({ value: z.string(), label: z.string() })),
+    }),
+    about: z.object({
+      enable: z.boolean(),
+      badge: z.string().optional(),
+      title: z.string(),
+      paragraphs: z.array(z.string()),
+      cards: z.array(
+        z.object({
+          icon: z.string(),
+          title: z.string(),
+          description: z.string(),
+        }),
+      ),
+    }),
+    contact: z.object({
+      enable: z.boolean(),
+      badge: z.string().optional(),
+      title: z.string(),
+      content: z.string(),
+      button: z.object({
+        enable: z.boolean(),
+        label: z.string(),
+        link: z.string(),
+      }),
+      items: z.array(
+        z.object({
+          icon: z.string(),
+          label: z.string(),
+          value: z.string(),
+          link: z.string().optional(),
+        }),
+      ),
+    }),
+  }),
+});
+
 const teamCollection = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/team" }),
   schema: z.object({
@@ -633,5 +705,6 @@ export const collections = {
   testimonialSection: testimonialSectionCollection,
   comparisonRowSection: comparisonRowSectionCollection,
   businessNeedsSection: businessNeedsSectionCollection,
+  digitalMarketingSection: digitalMarketingSectionCollection,
   team: teamCollection,
 };

@@ -11,6 +11,9 @@ import BrandsCarousel from "@/layouts/components/BrandsCarousel.astro";
 import OurStory from "@/layouts/components/OurStory.astro";
 import Faq from "@/layouts/components/Faq.astro";
 import CallToAction from "@/layouts/components/CallToAction.astro";
+import DigitalServices from "@/layouts/components/DigitalServices.astro";
+import DigitalAbout from "@/layouts/components/DigitalAbout.astro";
+import DigitalContact from "@/layouts/components/DigitalContact.astro";
 import VideoShowcase from "@/layouts/components/VideoShowcase.astro";
 import LeadGeneration from "@/layouts/components/LeadGeneration.astro";
 import config from "@/config/config.json";
@@ -319,6 +322,9 @@ const { checklist_form_action } = config.params;
     )
   }
 
+  <!-- Digital Marketing Services (legacy site content) -->
+  <DigitalServices />
+
   <!-- Features -->
   {
     homepageData.our_features.enable && (
@@ -523,6 +529,9 @@ const { checklist_form_action } = config.params;
   <!-- Our Thought / CEO Letter -->
   <OurStory />
 
+  <!-- About (legacy site content) -->
+  <DigitalAbout />
+
   <!-- Integrations -->
   {
     homepageData.integrations.enable && (
@@ -574,6 +583,9 @@ const { checklist_form_action } = config.params;
   }
 
   <Testimonial />
+
+  <!-- Contact (legacy site content) -->
+  <DigitalContact />
 
   <Faq />
 

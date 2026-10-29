@@ -1,0 +1,49 @@
+---
+import Badge from "@/layouts/components/Badge.astro";
+import DynamicIcon from "@/helpers/DynamicIcon";
+import { getListPage } from "@/lib/contentParser.astro";
+import { markdownify } from "@/lib/utils/textConverter";
+import type { DigitalMarketingSection } from "@/types";
+
+const entry = await getListPage("digitalMarketingSection", "digital-marketing");
+const data: DigitalMarketingSection = entry.data;
+const { about } = data;
+---
+
+{
+  data.enable && about.enable && (
+    <section id="about" class="section relative isolate overflow-hidden">
+      <div class="container">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div>
+            <Badge title={about.badge} />
+            <h2
+              class="title hasHighlight mt-5 mb-6"
+              set:html={markdownify(about.title)}
+            />
+            {about.paragraphs.map((paragraph) => (
+              <p class="text-lg text-text mb-5 leading-relaxed">{paragraph}</p>
+            ))}
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            {about.cards.map((card) => (
+              <article class="p-6 rounded-2xl bg-white/5 border border-border ring-1 ring-white/5 flex flex-col gap-3">
+                <div class="size-12 rounded-xl bg-primary/15 grid place-items-center mb-1">
+                  <DynamicIcon
+                    icon={card.icon}
+                    className="text-primary-light text-xl"
+                  />
+                </div>
+                <h3 class="text-h5-sm font-bold text-white">{card.title}</h3>
+                <p class="text-text">{card.description}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div class="absolute inset-0 grid place-items-center size-full -z-10">
+        <div class="size-180 xl:size-225 bg-radial from-primary/20 to-transparent from-0% to-70% rounded-full" />
+      </div>
+    </section>
+  )
+}

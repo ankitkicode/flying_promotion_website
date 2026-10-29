@@ -2,6 +2,7 @@
 import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import CallToAction from "@/layouts/components/CallToAction.astro";
+import DigitalContact from "@/layouts/components/DigitalContact.astro";
 import Faq from "@/layouts/components/Faq.astro";
 import PageHeader from "@/layouts/components/PageHeader.astro";
 import GHLMeeting from "@/layouts/partials/GHLMeeting.astro";
@@ -145,6 +146,9 @@ const {
       </div>
     </div>
   </section>
+
+  <!-- Contact details (legacy site content) -->
+  <DigitalContact />
 
   <!-- FAQ -->
   <Faq />
